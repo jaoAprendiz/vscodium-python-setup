@@ -1,0 +1,84 @@
+{
+    // ===== Geral =====
+    "editor.lineHeight": 1.8,
+    "editor.rulers": [
+        120
+    ],
+    "workbench.startupEditor": "none",
+    "editor.renderLineHighlight": "gutter",
+    "editor.fontLigatures": true,
+    "workbench.editor.labelFormat": "short",
+    "explorer.compactFolders": false,
+    "editor.semanticHighlighting.enabled": false,
+    "breadcrumbs.enabled": false,
+    // ===== Layout Minimalista =====
+    "workbench.activityBar.location": "hidden",
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "workbench.statusBar.visible": false,
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "window.menuBarVisibility": "compact",
+    // ===== Auto Save =====
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 800,
+    // ===== Ícones =====
+    "workbench.iconTheme": "material-icon-theme",
+    // ===== Fonte =====
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.fontSize": 16,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    // ===== Indentação (IMPORTANTE PARA PYTHON) =====
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false,
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    // ===== Python =====
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "python.languageServer": "Jedi",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.useLibraryCodeForTypes": true,
+    "python.analysis.diagnosticMode": "openFilesOnly",
+    // ===== Formatter =====
+    "editor.formatOnSave": true,
+    // ===== autopep8 =====
+    "autopep8.args": [
+        "--max-line-length=120",
+        "--aggressive",
+        "--aggressive"
+    ],
+    // ===== isort =====
+    "isort.args": [
+        "--line-length",
+        "120"
+    ],
+    // ===== Jupyter =====
+    "jupyter.askForKernelRestart": false,
+    "jupyter.interactiveWindow.creationMode": "single",
+    // ===== Error Lens (minimalista) =====
+    "errorLens.enabled": true,
+    "errorLens.fontStyleItalic": false,
+    "errorLens.fontWeight": "normal",
+    "errorLens.messageBackgroundMode": "none",
+    "errorLens.statusBarMessageEnabled": false,
+    "errorLens.gutterIconsEnabled": false,
+    // ===== Indent Rainbow =====
+    "indentRainbow.tabmixColor": "rgba(255,255,255,0.1)",
+    "indentRainbow.colors": [
+        "rgba(255,255,255,0.1)",
+        "rgba(255,255,255,0.1)",
+        "rgba(255,255,255,0.1)",
+        "rgba(255,255,255,0.1)"
+    ],
+    // ===== Tema =====
+    "workbench.colorTheme": "Cobalt Theme",
+    // ===== Terminal =====
+    "terminal.integrated.defaultProfile.linux": "bash"
+}
