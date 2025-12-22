@@ -33,6 +33,7 @@ As configurações personalizadas do editor estão em:
 ```text
 settings/settings.json
 ```
+
 Principais destaques:
 
 - Indentação padrão de 4 espaços (Python)
@@ -45,19 +46,19 @@ Principais destaques:
 ## 🚀 Como usar em uma nova máquina
 
 - Instale o VSCodium
-- Instale as extensões listadas em `extensions/extensions.txt`C- Copie o conteúdo de `settings/settings.json` para:
-```text~~/.config/VSCodium/User/settings.json(Linux)
-
-Reinicie o editor
+- Instale as extensões listadas em `extensions/extensions.txt`
+- Copie o conteúdo de `settings/settings.json` para:
+```text
+~/.config/VSCodium/User/settings.json(Linux)
+```
+- Reinicie o editor
 
 ## 🐍 Público-alvo
 
-Desenvolvedores Python
+- Desenvolvedores Python
+- Estudantes de Engenharia de Software / Data Science
+- Quem busca foco, produtividade e código limpo
 
-Estudantes de Engenharia de Software / Data Science
-
-Quem busca foco, produtividade e código limpo
-
-📄 Licença
+## 📄 Licença
 
 Uso livre para fins pessoais e educacionais.
