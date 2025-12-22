@@ -1,5 +1,7 @@
 # VSCodium Python Setup
 
+![VSCodium Python](/screenshots/example_1.png)
+
 Configuração minimalista e produtiva do **VSCodium** focada em desenvolvimento **Python**, com layout limpo, formatação automática e extensões essenciais para produtividade.
 
 ## ✨ Objetivos
@@ -27,6 +29,8 @@ extensions/extensions.txt
 ```
 
 ## ⚙️ Configurações
+
+![VSCodium Python](/screenshots/example_2.png)
 
 As configurações personalizadas do editor estão em:
 
