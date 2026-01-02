@@ -1,35 +1,22 @@
 {
-    // ===== Geral =====
-    "editor.lineHeight": 1.8,
-    "editor.rulers": [
-        120
-    ],
-    "workbench.startupEditor": "none",
-    "editor.renderLineHighlight": "gutter",
-    "editor.fontLigatures": true,
-    "workbench.editor.labelFormat": "short",
-    "explorer.compactFolders": false,
-    "editor.semanticHighlighting.enabled": false,
-    "breadcrumbs.enabled": false,
-    // ===== Layout Minimalista =====
-    "workbench.activityBar.location": "hidden",
-    "editor.minimap.enabled": false,
-    "editor.scrollbar.vertical": "hidden",
-    "editor.scrollbar.horizontal": "hidden",
-    "workbench.statusBar.visible": false,
-    "window.commandCenter": false,
-    "workbench.layoutControl.enabled": false,
-    "window.menuBarVisibility": "compact",
-    // ===== Auto Save =====
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 800,
-    // ===== Ícones =====
-    "workbench.iconTheme": "material-icon-theme",
-    // ===== Fonte =====
+    // =====================================================
+    // 🧠 EDITOR — Leitura, foco e conforto
+    // =====================================================
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.fontSize": 16,
-    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-    // ===== Indentação (IMPORTANTE PARA PYTHON) =====
+    "editor.lineHeight": 1.8,
+    "editor.fontLigatures": true,
+    "editor.rulers": [120],
+    "editor.renderLineHighlight": "gutter",
+    "editor.semanticHighlighting.enabled": false,
+    "editor.smoothScrolling": true,
+    "editor.fastScrollSensitivity": 5,
+    "editor.mouseWheelScrollSensitivity": 1,
+    "editor.formatOnSave": true,
+
+    // =====================================================
+    // 📐 INDENTAÇÃO — Padrão absoluto (Python)
+    // =====================================================
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
     "editor.detectIndentation": false,
@@ -39,46 +26,83 @@
         "editor.detectIndentation": false,
         "editor.defaultFormatter": "ms-python.autopep8"
     },
-    // ===== Python =====
+
+    // =====================================================
+    // 🧭 SCROLL & VISUAL LIMPO
+    // =====================================================
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.vertical": "auto",
+    "editor.scrollbar.horizontal": "auto",
+    "editor.scrollbar.verticalScrollbarSize": 6,
+    "editor.scrollbar.horizontalScrollbarSize": 6,
+    "breadcrumbs.enabled": false,
+
+    // =====================================================
+    // 🪟 LAYOUT — Minimalismo consciente
+    // =====================================================
+    "workbench.activityBar.location": "hidden",
+    "workbench.statusBar.visible": false,
+    "workbench.startupEditor": "none",
+    "workbench.editor.labelFormat": "short",
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "window.menuBarVisibility": "compact",
+    "explorer.compactFolders": false,
+
+    // =====================================================
+    // 💾 AUTO SAVE — Segurança sem atrapalhar
+    // =====================================================
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 800,
+
+    // =====================================================
+    // 🐍 PYTHON — Simples e estável
+    // =====================================================
     "python.defaultInterpreterPath": "/usr/bin/python3",
     "python.languageServer": "Jedi",
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.autoSearchPaths": true,
     "python.analysis.useLibraryCodeForTypes": true,
     "python.analysis.diagnosticMode": "openFilesOnly",
-    // ===== Formatter =====
-    "editor.formatOnSave": true,
-    // ===== autopep8 =====
+
+    // =====================================================
+    // 🧹 FORMATTERS
+    // =====================================================
     "autopep8.args": [
         "--max-line-length=120",
         "--aggressive",
         "--aggressive"
     ],
-    // ===== isort =====
     "isort.args": [
         "--line-length",
         "120"
     ],
-    // ===== Jupyter =====
+
+    // =====================================================
+    // 📊 JUPYTER
+    // =====================================================
     "jupyter.askForKernelRestart": false,
     "jupyter.interactiveWindow.creationMode": "single",
-    // ===== Error Lens (minimalista) =====
+
+    // =====================================================
+    // 🚨 ERROR LENS — Informativo, não intrusivo
+    // =====================================================
     "errorLens.enabled": true,
     "errorLens.fontStyleItalic": false,
     "errorLens.fontWeight": "normal",
     "errorLens.messageBackgroundMode": "none",
     "errorLens.statusBarMessageEnabled": false,
     "errorLens.gutterIconsEnabled": false,
-    // ===== Indent Rainbow =====
-    "indentRainbow.tabmixColor": "rgba(255,255,255,0.1)",
-    "indentRainbow.colors": [
-        "rgba(255,255,255,0.1)",
-        "rgba(255,255,255,0.1)",
-        "rgba(255,255,255,0.1)",
-        "rgba(255,255,255,0.1)"
-    ],
-    // ===== Tema =====
+
+    // =====================================================
+    // 🎨 TEMA & ÍCONES
+    // =====================================================
     "workbench.colorTheme": "Cobalt Theme",
-    // ===== Terminal =====
+    "workbench.iconTheme": "material-icon-theme",
+
+    // =====================================================
+    // 🖥 TERMINAL
+    // =====================================================
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
     "terminal.integrated.defaultProfile.linux": "bash"
 }
