@@ -1,108 +1,149 @@
 {
-    // =====================================================
-    // 🧠 EDITOR — Leitura, foco e conforto
-    // =====================================================
-    "editor.fontFamily": "JetBrainsMono Nerd Font",
-    "editor.fontSize": 16,
-    "editor.lineHeight": 1.8,
-    "editor.fontLigatures": true,
-    "editor.rulers": [120],
-    "editor.renderLineHighlight": "gutter",
-    "editor.semanticHighlighting.enabled": false,
-    "editor.smoothScrolling": true,
-    "editor.fastScrollSensitivity": 5,
-    "editor.mouseWheelScrollSensitivity": 1,
-    "editor.formatOnSave": true,
-
-    // =====================================================
-    // 📐 INDENTAÇÃO — Padrão absoluto (Python)
-    // =====================================================
-    "editor.insertSpaces": true,
+  // =====================================================
+  // 🧠 EDITOR — Leitura, foco e conforto
+  // =====================================================
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 1.8,
+  "editor.fontLigatures": true,
+  "editor.rulers": [
+    88,
+    120
+  ], // 88 = limite Ruff, 120 = limite geral
+  "editor.renderLineHighlight": "gutter",
+  "editor.smoothScrolling": true,
+  "editor.fastScrollSensitivity": 5,
+  "editor.mouseWheelScrollSensitivity": 1,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "breadcrumbs.enabled": false,
+  // =====================================================
+  // 📐 INDENTAÇÃO
+  // =====================================================
+  "editor.insertSpaces": true,
+  "editor.tabSize": 4,
+  "editor.detectIndentation": false,
+  // =====================================================
+  // 🐍 PYTHON — Ruff
+  // =====================================================
+  "[python]": {
     "editor.tabSize": 4,
-    "editor.detectIndentation": false,
-    "[python]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 4,
-        "editor.detectIndentation": false,
-        "editor.defaultFormatter": "ms-python.autopep8"
-    },
-
-    // =====================================================
-    // 🧭 SCROLL & VISUAL LIMPO
-    // =====================================================
-    "editor.minimap.enabled": false,
-    "editor.scrollbar.vertical": "auto",
-    "editor.scrollbar.horizontal": "auto",
-    "editor.scrollbar.verticalScrollbarSize": 6,
-    "editor.scrollbar.horizontalScrollbarSize": 6,
-    "breadcrumbs.enabled": false,
-
-    // =====================================================
-    // 🪟 LAYOUT — Minimalismo consciente
-    // =====================================================
-    "workbench.activityBar.location": "hidden",
-    "workbench.statusBar.visible": false,
-    "workbench.startupEditor": "none",
-    "workbench.editor.labelFormat": "short",
-    "workbench.layoutControl.enabled": false,
-    "window.commandCenter": false,
-    "window.menuBarVisibility": "compact",
-    "explorer.compactFolders": false,
-
-    // =====================================================
-    // 💾 AUTO SAVE — Segurança sem atrapalhar
-    // =====================================================
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 800,
-
-    // =====================================================
-    // 🐍 PYTHON — Simples e estável
-    // =====================================================
-    "python.defaultInterpreterPath": "/usr/bin/python3",
-    "python.languageServer": "Jedi",
-    "python.analysis.typeCheckingMode": "basic",
-    "python.analysis.autoSearchPaths": true,
-    "python.analysis.useLibraryCodeForTypes": true,
-    "python.analysis.diagnosticMode": "openFilesOnly",
-
-    // =====================================================
-    // 🧹 FORMATTERS
-    // =====================================================
-    "autopep8.args": [
-        "--max-line-length=120",
-        "--aggressive",
-        "--aggressive"
-    ],
-    "isort.args": [
-        "--line-length",
-        "120"
-    ],
-
-    // =====================================================
-    // 📊 JUPYTER
-    // =====================================================
-    "jupyter.askForKernelRestart": false,
-    "jupyter.interactiveWindow.creationMode": "single",
-
-    // =====================================================
-    // 🚨 ERROR LENS — Informativo, não intrusivo
-    // =====================================================
-    "errorLens.enabled": true,
-    "errorLens.fontStyleItalic": false,
-    "errorLens.fontWeight": "normal",
-    "errorLens.messageBackgroundMode": "none",
-    "errorLens.statusBarMessageEnabled": false,
-    "errorLens.gutterIconsEnabled": false,
-
-    // =====================================================
-    // 🎨 TEMA & ÍCONES
-    // =====================================================
-    "workbench.colorTheme": "Cobalt Theme",
-    "workbench.iconTheme": "material-icon-theme",
-
-    // =====================================================
-    // 🖥 TERMINAL
-    // =====================================================
-    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-    "terminal.integrated.defaultProfile.linux": "bash"
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+  "python.languageServer": "Jedi",
+  "ruff.lint.select": [
+    "COM812"
+  ],
+  // =====================================================
+  // 🐹 GO
+  // =====================================================
+  "[go]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false, // Go usa tabs por convenção (gofmt)
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "go.useLanguageServer": true,
+  "go.toolsManagement.autoUpdate": true,
+  "go.lintTool": "golangci-lint",
+  "go.formatTool": "gofmt",
+  "gopls": {
+    "ui.semanticTokens": true
+  },
+  // =====================================================
+  // 📝 MARKDOWN / JSON / YAML
+  // =====================================================
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": false,
+      "strings": false,
+      "other": false
+    }
+  },
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  },
+  "[yaml]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  // =====================================================
+  // 🧭 SCROLL & LAYOUT
+  // =====================================================
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": false,
+  "workbench.startupEditor": "none",
+  "workbench.editor.labelFormat": "short",
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "compact",
+  "explorer.compactFolders": false,
+  // =====================================================
+  // 💾 AUTO SAVE
+  // =====================================================
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 800,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/*.pyc": true
+  },
+  // =====================================================
+  // 🔧 GIT
+  // =====================================================
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  // =====================================================
+  // 🚨 ERROR LENS
+  // =====================================================
+  "errorLens.enabled": true,
+  "errorLens.fontStyleItalic": false,
+  "errorLens.fontWeight": "normal",
+  "errorLens.messageBackgroundMode": "none",
+  "errorLens.statusBarMessageEnabled": false,
+  "errorLens.gutterIconsEnabled": false,
+  // =====================================================
+  // 🎨 TEMA & ÍCONES (imutável)
+  // =====================================================
+  "workbench.colorTheme": "Solarized Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  // =====================================================
+  // 🖥 TERMINAL
+  // =====================================================
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.env.linux": {
+    "PATH": "/usr/bin:/bin:/usr/local/bin:${env:PATH}"
+  },
+  "python.createEnvironment.trigger": "off",
+  "explorer.confirmDelete": false,
+  // =====================================================
+  // 🗄️ SQLITE VIEWER — agrupa arquivos de banco relacionados
+  // =====================================================
+  "explorer.fileNesting.patterns": {
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  }
 }
